@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muh. Farid Rahman</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #ac9c9c;
+        }
+
+        .container{
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align: center;
+            color: #333;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, textarea, select{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .radio-group{
+            margin-bottom: 15px;
+        }
+
+        .radio-group input{
+            width: auto;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulir Pendaftaran Muh. Farid Rahman</h2>
+
+        <form>
+
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama lengkap">
+
+            <label>Password</label>
+            <input type="password" placeholder="Masukkan password">
+
+            <label>Email</label>
+            <input type="email" placeholder="Masukkan email">
+
+            <label>Alamat</label>
+            <textarea rows="4" placeholder="Masukkan alamat"></textarea>
+
+            <label>Jenis Kelamin</label>
+            <div class="radio-group">
+                <input type="radio" name="jk"> Laki-laki
+                <input type="radio" name="jk"> Perempuan
+            </div>
+
+            <label>Tempat Lahir</label>
+            <input type="text" placeholder="Masukkan tempat lahir">
+
+            <label>Tanggal Lahir</label>
+            <input type="date">
+
+            <label>Pilih Kota</label>
+            <select>
+                <option>-- Pilih Kota --</option>
+                <option>Maros</option>
+                <option>Makassar</option>
+                <option>Gowa</option>
+                <option>Jeneponto</option>
+                <option>BuluKumba</option>
+                <option>Pangkep</option>
+                <option>Barru</option>
+            </select>
+
+            <label>Unggah Foto</label>
+            <input type="file">
+
+            <button type="submit">Daftar</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
