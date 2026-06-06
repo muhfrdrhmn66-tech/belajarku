@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.contact{
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+    background:#fff;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact h1{
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:10px;
+}
+
+.contact p{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.contact-container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.contact-info{
+    flex:1;
+    min-width:300px;
+}
+
+.contact-info h2{
+    color:#3498db;
+    margin-bottom:20px;
+}
+
+.contact-info div{
+    margin-bottom:15px;
+    font-size:16px;
+    color:#444;
+}
+
+.contact-form{
+    flex:1;
+    min-width:300px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.contact-form textarea{
+    resize:none;
+    height:120px;
+}
+
+.contact-form button{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#2980b9;
+}
+
+@media(max-width:768px){
+    .contact-container{
+        flex-direction:column;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<section class="contact">
+    <h1>Contact Me</h1>
+    <p>Silakan hubungi saya melalui informasi di bawah ini atau kirim pesan langsung.</p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h2>Informasi Kontak</h2>
+
+            <div>📍 Maros, Sulawesi Selatan</div>
+            <div>📞 085161178155</div>
+            <div>📧 muhfrdrhmn66@gmail.com</div>
+            <div>📷 Instagram: @muhfrdrhmn_</div>
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Nama Lengkap" required>
+
+                <input type="email" placeholder="Email" required>
+
+                <input type="text" placeholder="Subjek">
+
+                <textarea placeholder="Tulis pesan Anda..." required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+}
+
+header{
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+.home{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0 10%;
+}
+
+.home-content{
+    max-width:600px;
+}
+
+.home-content h3{
+    font-size:28px;
+}
+
+.home-content h1{
+    font-size:55px;
+    margin:10px 0;
+}
+
+.home-content h2{
+    color:#ffd700;
+    margin-bottom:15px;
+}
+
+.home-content p{
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#ffd700;
+    color:#333;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.home-image img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-left:50px;
+}
+
+@media(max-width:768px){
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .home-image img{
+        margin:0 0 30px 0;
+        width:250px;
+        height:250px;
+    }
+
+    .home-content h1{
+        font-size:40px;
+    }
+
+    nav ul{
+        display:none;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">MyPortfolio</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="home">
+
+    <div class="home-content">
+        <h3>Halo, Saya</h3>
+        <h1>Muh. Farid Rahman</h1>
+        <h2>Mahasiswa Tingkat 3 Penyuluhan Pertanian berkelanjutan</h2>
+
+        <p>
+            Selamat datang di website portofolio saya.
+            Saya memiliki minat dalam bidang penyuluhan pertanian,
+            mekanisasi pertanian, teknologi pertanian, serta pengembangan
+            sumber daya manusia. Website ini berisi profil, pengalaman,
+            keterampilan, dan informasi kontak saya.
+        </p>
+
+        <a href="#" class="btn">Lihat Profil</a>
+    </div>
+
+    <div class="home-image">
+        <img src="foto_formal.jpeg" alt="Foto Profil">
+    </div>
+
+</section>
+
+</body>
+</html>
