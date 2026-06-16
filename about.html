@@ -1,184 +1,205 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me - Penyuluhan Biosaka</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Farid Rahman</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
-}
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
 
-body{
-    background:linear-gradient(135deg,#ffd6e7,#ff69b4);
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px;
-}
+        body{
+            background: linear-gradient(135deg, #8B0000, #DC143C);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
 
-.container{
-    max-width:1000px;
-    width:100%;
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
+        .container{
+            max-width:1000px;
+            width:100%;
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 10px 25px rgba(0,0,0,0.3);
+            display:flex;
+            flex-wrap:wrap;
+        }
 
-.header{
-    background:#ff69b4;
-    color:white;
-    text-align:center;
-    padding:40px;
-}
+        .left{
+            flex:1;
+            min-width:300px;
+            background:#B22222;
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
 
-.header img{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    border:5px solid white;
-    object-fit:cover;
-    margin-bottom:15px;
-}
+        .left img{
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
 
-.header h1{
-    margin-bottom:10px;
-}
+        .left h2{
+            margin-bottom:10px;
+        }
 
-.header p{
-    font-size:18px;
-}
+        .left p{
+            line-height:1.8;
+        }
 
-.content{
-    padding:40px;
-}
+        .right{
+            flex:2;
+            min-width:300px;
+            padding:40px;
+        }
 
-.section{
-    margin-bottom:30px;
-}
+        .right h1{
+            color:#B22222;
+            margin-bottom:20px;
+            border-bottom:3px solid #B22222;
+            padding-bottom:10px;
+        }
 
-.section h2{
-    color:#ff1493;
-    border-left:5px solid #ff1493;
-    padding-left:12px;
-    margin-bottom:15px;
-}
+        .right p{
+            text-align:justify;
+            line-height:1.8;
+            color:#444;
+            margin-bottom:15px;
+        }
 
-.section p{
-    line-height:1.9;
-    text-align:justify;
-    color:#444;
-}
+        .skills{
+            margin-top:25px;
+        }
 
-.highlight{
-    background:#fff0f5;
-    border-left:5px solid #ff69b4;
-    padding:20px;
-    margin-top:15px;
-    border-radius:10px;
-}
+        .skills h3{
+            color:#B22222;
+            margin-bottom:15px;
+        }
 
-ul{
-    padding-left:25px;
-}
+        .skill{
+            margin-bottom:15px;
+        }
 
-ul li{
-    margin-bottom:10px;
-    color:#444;
-}
+        .skill span{
+            font-weight:bold;
+            color:#444;
+        }
 
-.footer{
-    background:#ff69b4;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
+        .bar{
+            width:100%;
+            height:12px;
+            background:#ddd;
+            border-radius:20px;
+            overflow:hidden;
+            margin-top:5px;
+        }
 
-@media(max-width:768px){
-    .content{
-        padding:25px;
-    }
+        .progress{
+            height:100%;
+            background:#DC143C;
+        }
 
-    .header img{
-        width:140px;
-        height:140px;
-    }
-}
-</style>
-
+        .footer{
+            text-align:center;
+            padding:15px;
+            background:#8B0000;
+            color:white;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <div class="header">
-        <img src="foto pribadi.jpeg" alt="Foto Profil">
+        <div class="left">
+            <img src="foto haldan.jpeg" alt="Foto Profil">
 
-        <h1>Nur Hikma Rahmadani</h1>
-        <p>05.01.23.3005</p>
-    </div>
-
-    <div class="content">
-
-        <div class="section">
-            <h2>Tentang Saya</h2>
-
-            <p>
-                Saya merupakan mahasiswa Program Studi Penyuluhan 
-                Pertanian yang memiliki minat dalam pengembangan 
-                teknologi dan inovasi pertanian yang ramah lingkungan. 
-                Melalui berbagai kegiatan penyuluhan, saya berupaya 
-                meningkatkan pengetahuan dan keterampilan petani dalam
-                 menerapkan teknologi yang mudah, murah, dan bermanfaat
-                  bagi usaha tani.
-            </p>
+            <h2>ANDI HALDAN NUR</h2>
+            <p>Mahasiswa Polbangtan Gowa</p>
         </div>
 
-        <div class="section">
-            <h2>Kegiatan Penyuluhan Pembuatan Biosaka</h2>
+        <div class="right">
+
+            <h1>Tentang Saya</h1>
 
             <p>
-                Salah satu kegiatan penyuluhan yang pernah saya laksanakan adalah penyuluhan mengenai pembuatan dan pemanfaatan Biosaka. Kegiatan ini bertujuan untuk memperkenalkan Biosaka sebagai elisitor alami yang berasal dari ekstrak rumput atau tanaman sehat yang terdapat di sekitar lingkungan pertanian.
+                Saya merupakan mahasiswa Tingkat 3 Program Studi Penyuluhan 
+                Pertanian Berkelanjutan yang memiliki minat besar dalam pengembangan
+                 pertanian modern dan pemberdayaan petani melalui kegiatan 
+                 penyuluhan. Saya memiliki kemampuan komunikasi, kerja sama tim, 
+                 serta semangat belajar yang tinggi dalam menghadapi tantangan di 
+                 sektor pertanian.
             </p>
 
-            <div class="highlight">
-                Biosaka merupakan inovasi pertanian yang mudah dibuat oleh petani dengan memanfaatkan bahan-bahan yang tersedia di alam. Penggunaan Biosaka diharapkan mampu mendukung pertumbuhan tanaman serta meningkatkan efisiensi budidaya secara berkelanjutan.
+            <p>
+                Selama mengikuti Praktik Kerja Lapangan (PKL) II di Kabupaten Bone,
+                 Sulawesi Selatan, saya memperoleh banyak pengalaman dan 
+                 pengetahuan baru, terutama dalam bidang alat dan mesin
+                  pertanian (Alsintan). Kegiatan tersebut memberikan
+                   kesempatan kepada saya untuk terlibat langsung dalam 
+                   pelatihan dan pendampingan petani terkait penggunaan
+                    teknologi pertanian modern.
+            </p>
+
+            <p>
+                Fokus utama kegiatan yang saya ikuti meliputi 
+                pengoperasian drone pertanian, rotavator, dan traktor 
+                John Deere yang digunakan dalam mendukung Program Cetak 
+                Sawah Rakyat. Pengalaman tersebut semakin memperluas 
+                wawasan saya mengenai pentingnya mekanisasi pertanian 
+                dalam meningkatkan produktivitas dan efisiensi usaha 
+                tani.
+            </p>
+
+            <div class="skills">
+
+                <h3>Keahlian</h3>
+
+                <div class="skill">
+                    <span>Penyuluhan Pertanian</span>
+                    <div class="bar">
+                        <div class="progress" style="width:90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Pengoperasian Drone Pertanian</span>
+                    <div class="bar">
+                        <div class="progress" style="width:85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Pengoperasian Rotavator</span>
+                    <div class="bar">
+                        <div class="progress" style="width:80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Microsoft Office</span>
+                    <div class="bar">
+                        <div class="progress" style="width:90%;"></div>
+                    </div>
+                </div>
+
             </div>
-        </div>
 
-        <div class="section">
-            <h2>Tujuan Penyuluhan</h2>
-
-            <ul>
-                <li>Meningkatkan pengetahuan petani mengenai Biosaka.</li>
-                <li>Melatih petani membuat Biosaka secara mandiri.</li>
-                <li>Mendorong penggunaan teknologi pertanian ramah lingkungan.</li>
-                <li>Mengurangi ketergantungan terhadap input pertanian yang berlebihan.</li>
-                <li>Meningkatkan kemampuan petani dalam mengelola usaha tani berkelanjutan.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Manfaat Kegiatan</h2>
-
-            <p>
-                Melalui kegiatan penyuluhan ini, petani memperoleh pengetahuan baru mengenai pemanfaatan sumber daya alam di sekitar lahan pertanian. Selain itu, kegiatan ini juga meningkatkan keterampilan petani dalam membuat Biosaka serta memperkuat penerapan pertanian yang lebih efisien dan berkelanjutan.
-            </p>
         </div>
 
     </div>
-
-    <div class="footer">
-        © 2026 | About Me - Kegiatan Penyuluhan Biosaka
-    </div>
-
-</div>
 
 </body>
 </html>

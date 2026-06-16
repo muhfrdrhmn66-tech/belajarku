@@ -3,92 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Person</title>
+    <title>Contact - Haldan</title>
 
     <style>
         *{
             margin:0;
             padding:0;
             box-sizing:border-box;
-            font-family:'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
         }
 
         body{
+            background: linear-gradient(135deg, #8B0000, #DC143C);
             min-height:100vh;
-            background:linear-gradient(135deg,#ffd6e7,#ff69b4);
             display:flex;
             justify-content:center;
             align-items:center;
-            padding:20px;
         }
 
         .container{
-            width:100%;
-            max-width:900px;
+            width:90%;
+            max-width:800px;
             background:white;
             border-radius:20px;
-            overflow:hidden;
+            padding:40px;
             box-shadow:0 10px 25px rgba(0,0,0,0.2);
         }
 
-        .header{
-            background:#ff69b4;
-            color:white;
+        h1{
             text-align:center;
-            padding:35px;
-        }
-
-        .header h1{
-            font-size:36px;
+            color:#B22222;
             margin-bottom:10px;
         }
 
-        .header p{
-            font-size:16px;
+        .subtitle{
+            text-align:center;
+            color:#666;
+            margin-bottom:30px;
         }
 
-        .content{
-            padding:40px;
-        }
-
-        .contact-card{
+        .contact-info{
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
             gap:20px;
-            margin-bottom:35px;
+            margin-bottom:30px;
         }
 
         .card{
-            background:#fff0f5;
-            padding:25px;
-            text-align:center;
+            background:#ffe5e5;
+            padding:20px;
             border-radius:15px;
+            text-align:center;
             transition:0.3s;
         }
 
         .card:hover{
             transform:translateY(-5px);
-            box-shadow:0 5px 15px rgba(255,105,180,0.3);
-        }
-
-        .icon{
-            font-size:40px;
-            margin-bottom:10px;
+            background:#ffcccc;
         }
 
         .card h3{
-            color:#ff1493;
+            color:#B22222;
             margin-bottom:10px;
         }
 
         .card p{
-            color:#555;
+            color:#444;
         }
 
-        .form-title{
-            text-align:center;
-            color:#ff1493;
-            margin-bottom:20px;
+        form{
+            margin-top:20px;
         }
 
         .input-group{
@@ -98,22 +82,21 @@
         label{
             display:block;
             margin-bottom:5px;
-            color:#ff1493;
-            font-weight:600;
+            color:#B22222;
+            font-weight:bold;
         }
 
-        input,
-        textarea{
+        input, textarea{
             width:100%;
             padding:12px;
-            border:2px solid #ffc0cb;
+            border:2px solid #ddd;
             border-radius:10px;
             outline:none;
         }
 
         input:focus,
         textarea:focus{
-            border-color:#ff69b4;
+            border-color:#DC143C;
         }
 
         textarea{
@@ -123,68 +106,48 @@
 
         button{
             width:100%;
-            padding:14px;
+            padding:12px;
+            background:#B22222;
+            color:white;
             border:none;
             border-radius:10px;
-            background:#ff69b4;
-            color:white;
             font-size:16px;
             cursor:pointer;
             transition:0.3s;
         }
 
         button:hover{
-            background:#ff1493;
-        }
-
-        .footer{
-            background:#ff69b4;
-            color:white;
-            text-align:center;
-            padding:15px;
+            background:#8B0000;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <div class="header">
-        <h1>Contact Person</h1>
-        <p>Silakan hubungi saya melalui informasi berikut</p>
-    </div>
+        <h1>Hubungi Saya</h1>
+        <p class="subtitle">
+            Silakan hubungi saya melalui informasi berikut atau kirim pesan langsung.
+        </p>
 
-    <div class="content">
-
-        <div class="contact-card">
+        <div class="contact-info">
 
             <div class="card">
-                <div class="icon">👤</div>
-                <h3>Nama</h3>
-                <p>Nur Hikma Rahmadani</p>
+                <h3>📱 Telepon</h3>
+                <p>0812-3456-7890</p>
             </div>
 
             <div class="card">
-                <div class="icon">📱</div>
-                <h3>WhatsApp</h3>
-                <p>0882 0217 20467</p>
+                <h3>📧 Email</h3>
+                <p>haldanur@email.com</p>
             </div>
 
             <div class="card">
-                <div class="icon">📧</div>
-                <h3>Email</h3>
-                <p>nurhikma@email.com</p>
-            </div>
-
-            <div class="card">
-                <div class="icon">📍</div>
-                <h3>Alamat</h3>
-                <p>Gowa, Sulawesi Selatan, Indonesia</p>
+                <h3>📍 Alamat</h3>
+                <p>Bone, Sulawesi Selatan, Indonesia</p>
             </div>
 
         </div>
-
-        <h2 class="form-title">Kirim Pesan</h2>
 
         <form>
             <div class="input-group">
@@ -199,19 +162,13 @@
 
             <div class="input-group">
                 <label>Pesan</label>
-                <textarea placeholder="Tulis pesan Anda..."></textarea>
+                <textarea placeholder="Tulis pesan Anda di sini..."></textarea>
             </div>
 
             <button type="submit">Kirim Pesan</button>
         </form>
 
     </div>
-
-    <div class="footer">
-        © 2026 | Contact Person Nur Hikma Rahmadani
-    </div>
-
-</div>
 
 </body>
 </html>
