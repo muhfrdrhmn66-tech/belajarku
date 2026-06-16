@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background:linear-gradient(
+                rgba(255,105,180,0.7),
+                rgba(255,182,193,0.7)
+            ),
+            url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+        }
+
+        /* Navbar */
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+            background:rgba(255,255,255,0.15);
+            backdrop-filter:blur(10px);
+        }
+
+        .logo{
+            font-size:30px;
+            font-weight:bold;
+            color:white;
+        }
+
+        .menu a{
+            text-decoration:none;
+            color:white;
+            margin-left:25px;
+            font-weight:500;
+            transition:0.3s;
+        }
+
+        .menu a:hover{
+            color:#ffe4ef;
+        }
+
+        /* Hero Section */
+        .hero{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            min-height:85vh;
+            padding:20px;
+        }
+
+        .hero-content{
+            max-width:850px;
+            color:white;
+        }
+
+        .hero-content img{
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            border:6px solid white;
+            object-fit:cover;
+            margin-bottom:25px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .hero-content h1{
+            font-size:55px;
+            margin-bottom:10px;
+        }
+
+        .hero-content h3{
+            font-size:24px;
+            font-weight:400;
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:18px;
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:14px 35px;
+            background:white;
+            color:#ff1493;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#fff0f5;
+            transform:translateY(-3px);
+        }
+
+        /* Footer */
+        footer{
+            text-align:center;
+            color:white;
+            padding:20px;
+            background:rgba(255,255,255,0.1);
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+            }
+
+            .menu{
+                margin-top:15px;
+            }
+
+            .menu a{
+                margin:0 10px;
+            }
+
+            .hero-content h1{
+                font-size:40px;
+            }
+
+            .hero-content h3{
+                font-size:20px;
+            }
+
+            .hero-content img{
+                width:150px;
+                height:150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Navigasi -->
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <img src="foto pribadi.jpeg" alt="Foto Profil">
+
+            <h1>NUR HIKMA RAHMADANI</h1>
+
+            <h3>05.01.23.3005</h3>
+
+            <p>
+                Selamat datang di website portofolio saya. Saya merupakan mahasiswa
+                Penyuluhan Pertanian yang memiliki minat dalam pengembangan pertanian
+                modern, penyuluhan, serta pemanfaatan teknologi pertanian untuk
+                meningkatkan produktivitas dan kesejahteraan petani. Melalui berbagai
+                kegiatan akademik, organisasi, dan Praktik Kerja Lapangan, saya terus
+                mengembangkan kemampuan dalam bidang penyuluhan dan inovasi pertanian.
+            </p>
+
+            <a href="cv.html" class="btn">
+                Tentang Saya
+            </a>
+            <a href="contact.html" class="btn">
+                Hubungi Saya
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 | Website Portofolio Nur Hikma Rahmadani
+    </footer>
+
+</body>
+</html>
