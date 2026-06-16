@@ -1,205 +1,199 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Farid Rahman</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me - Penyuluhan Teknik Pengolahan Tanah Sawah</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
 
-        body{
-            background: linear-gradient(135deg, #8B0000, #DC143C);
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:20px;
-        }
+body{
+    background:linear-gradient(135deg,#8B0000,#DC143C);
+    min-height:100vh;
+    padding:30px;
+}
 
-        .container{
-            max-width:1000px;
-            width:100%;
-            background:white;
-            border-radius:20px;
-            overflow:hidden;
-            box-shadow:0 10px 25px rgba(0,0,0,0.3);
-            display:flex;
-            flex-wrap:wrap;
-        }
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
 
-        .left{
-            flex:1;
-            min-width:300px;
-            background:#B22222;
-            color:white;
-            text-align:center;
-            padding:40px;
-        }
+.header{
+    background:linear-gradient(135deg,#B22222,#DC143C);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
 
-        .left img{
-            width:200px;
-            height:200px;
-            border-radius:50%;
-            border:5px solid white;
-            object-fit:cover;
-            margin-bottom:20px;
-        }
+.header img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:15px;
+}
 
-        .left h2{
-            margin-bottom:10px;
-        }
+.header h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
 
-        .left p{
-            line-height:1.8;
-        }
+.header p{
+    font-size:18px;
+}
 
-        .right{
-            flex:2;
-            min-width:300px;
-            padding:40px;
-        }
+.content{
+    padding:40px;
+}
 
-        .right h1{
-            color:#B22222;
-            margin-bottom:20px;
-            border-bottom:3px solid #B22222;
-            padding-bottom:10px;
-        }
+.section{
+    margin-bottom:30px;
+}
 
-        .right p{
-            text-align:justify;
-            line-height:1.8;
-            color:#444;
-            margin-bottom:15px;
-        }
+.section h2{
+    color:#B22222;
+    border-left:6px solid #B22222;
+    padding-left:12px;
+    margin-bottom:15px;
+}
 
-        .skills{
-            margin-top:25px;
-        }
+.section p{
+    text-align:justify;
+    line-height:1.9;
+    color:#444;
+}
 
-        .skills h3{
-            color:#B22222;
-            margin-bottom:15px;
-        }
+.highlight{
+    background:#ffe5e5;
+    border-left:5px solid #DC143C;
+    padding:20px;
+    margin-top:15px;
+    border-radius:10px;
+}
 
-        .skill{
-            margin-bottom:15px;
-        }
+ul{
+    padding-left:25px;
+}
 
-        .skill span{
-            font-weight:bold;
-            color:#444;
-        }
+ul li{
+    margin-bottom:10px;
+    line-height:1.8;
+    color:#444;
+}
 
-        .bar{
-            width:100%;
-            height:12px;
-            background:#ddd;
-            border-radius:20px;
-            overflow:hidden;
-            margin-top:5px;
-        }
+.footer{
+    background:#B22222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
 
-        .progress{
-            height:100%;
-            background:#DC143C;
-        }
+@media(max-width:768px){
 
-        .footer{
-            text-align:center;
-            padding:15px;
-            background:#8B0000;
-            color:white;
-        }
-    </style>
+    .header img{
+        width:140px;
+        height:140px;
+    }
+
+    .header h1{
+        font-size:28px;
+    }
+
+    .content{
+        padding:25px;
+    }
+}
+</style>
+
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div class="left">
-            <img src="foto haldan.jpeg" alt="Foto Profil">
+    <div class="header">
 
-            <h2>ANDI HALDAN NUR</h2>
-            <p>Mahasiswa Polbangtan Gowa</p>
+        <img src="foto haldan.jpeg" alt="Foto Profil">
+
+        <h1>Andi Haldan Nur</h1>
+        <p>05.01.23.2984</p>
+
+    </div>
+
+    <div class="content">
+
+        <div class="section">
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Saya merupakan mahasiswa Tingkat 3 Program Studi Penyuluhan Pertanian yang memiliki minat dalam bidang pengembangan sumber daya manusia pertanian melalui kegiatan penyuluhan. Saya percaya bahwa peningkatan pengetahuan dan keterampilan petani merupakan salah satu kunci dalam meningkatkan produktivitas dan keberlanjutan usaha tani.
+            </p>
         </div>
 
-        <div class="right">
-
-            <h1>Tentang Saya</h1>
-
-            <p>
-                Saya merupakan mahasiswa Tingkat 3 Program Studi Penyuluhan 
-                Pertanian Berkelanjutan yang memiliki minat besar dalam pengembangan
-                 pertanian modern dan pemberdayaan petani melalui kegiatan 
-                 penyuluhan. Saya memiliki kemampuan komunikasi, kerja sama tim, 
-                 serta semangat belajar yang tinggi dalam menghadapi tantangan di 
-                 sektor pertanian.
-            </p>
+        <div class="section">
+            <h2>Kegiatan Penyuluhan Teknik Pengolahan Tanah Sawah</h2>
 
             <p>
-                Selama mengikuti Praktik Kerja Lapangan (PKL) II di Kabupaten Bone,
-                 Sulawesi Selatan, saya memperoleh banyak pengalaman dan 
-                 pengetahuan baru, terutama dalam bidang alat dan mesin
-                  pertanian (Alsintan). Kegiatan tersebut memberikan
-                   kesempatan kepada saya untuk terlibat langsung dalam 
-                   pelatihan dan pendampingan petani terkait penggunaan
-                    teknologi pertanian modern.
+                Salah satu kegiatan penyuluhan yang saya laksanakan adalah penyuluhan mengenai teknik pengolahan tanah sawah. Kegiatan ini bertujuan untuk memberikan pemahaman kepada petani mengenai pentingnya pengolahan tanah yang baik dan benar sebelum proses penanaman padi dilakukan. Pengolahan tanah yang optimal dapat memperbaiki struktur tanah, meningkatkan aerasi, mengendalikan gulma, serta menciptakan kondisi yang mendukung pertumbuhan tanaman padi.
             </p>
 
-            <p>
-                Fokus utama kegiatan yang saya ikuti meliputi 
-                pengoperasian drone pertanian, rotavator, dan traktor 
-                John Deere yang digunakan dalam mendukung Program Cetak 
-                Sawah Rakyat. Pengalaman tersebut semakin memperluas 
-                wawasan saya mengenai pentingnya mekanisasi pertanian 
-                dalam meningkatkan produktivitas dan efisiensi usaha 
-                tani.
-            </p>
-
-            <div class="skills">
-
-                <h3>Keahlian</h3>
-
-                <div class="skill">
-                    <span>Penyuluhan Pertanian</span>
-                    <div class="bar">
-                        <div class="progress" style="width:90%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <span>Pengoperasian Drone Pertanian</span>
-                    <div class="bar">
-                        <div class="progress" style="width:85%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <span>Pengoperasian Rotavator</span>
-                    <div class="bar">
-                        <div class="progress" style="width:80%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <span>Microsoft Office</span>
-                    <div class="bar">
-                        <div class="progress" style="width:90%;"></div>
-                    </div>
-                </div>
-
+            <div class="highlight">
+                Dalam kegiatan penyuluhan ini, petani diberikan materi mengenai tahapan pengolahan tanah sawah mulai dari pembersihan lahan, pembajakan, penggaruan, hingga perataan lahan menggunakan alat dan mesin pertanian yang sesuai.
             </div>
+        </div>
+
+        <div class="section">
+            <h2>Materi yang Disampaikan</h2>
+
+            <ul>
+                <li>Pentingnya pengolahan tanah sebelum tanam.</li>
+                <li>Tahapan pengolahan tanah sawah yang baik dan benar.</li>
+                <li>Penggunaan alat dan mesin pertanian (Alsintan).</li>
+                <li>Manfaat pembajakan dan penggaruan terhadap kesuburan tanah.</li>
+                <li>Teknik perataan lahan untuk meningkatkan efisiensi irigasi.</li>
+            </ul>
+
+        </div>
+
+        <div class="section">
+            <h2>Tujuan Penyuluhan</h2>
+
+            <ul>
+                <li>Meningkatkan pengetahuan petani mengenai teknik pengolahan tanah sawah.</li>
+                <li>Meningkatkan keterampilan petani dalam penggunaan Alsintan.</li>
+                <li>Mendukung peningkatan produktivitas tanaman padi.</li>
+                <li>Mendorong penerapan budidaya padi yang lebih efektif dan efisien.</li>
+                <li>Mendukung keberhasilan program peningkatan produksi pangan.</li>
+            </ul>
+
+        </div>
+
+        <div class="section">
+            <h2>Manfaat Kegiatan</h2>
+
+            <p>
+                Melalui kegiatan penyuluhan ini, petani memperoleh wawasan dan keterampilan baru dalam mengelola lahan sawah secara lebih baik. Dengan penerapan teknik pengolahan tanah yang tepat, diharapkan produktivitas tanaman padi dapat meningkat, penggunaan tenaga kerja menjadi lebih efisien, dan hasil usaha tani menjadi lebih optimal.
+            </p>
 
         </div>
 
     </div>
+
+    <div class="footer">
+        © 2026 | About Me - Penyuluhan Teknik Pengolahan Tanah Sawah
+    </div>
+
+</div>
 
 </body>
 </html>
