@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Haldan</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', sans-serif;
+        }
+
+        body{
+            background: linear-gradient(rgba(139,0,0,0.8),
+            rgba(220,20,60,0.8)),
+            url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
+            background-size:cover;
+            background-position:center;
+            min-height:100vh;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+            background:rgba(0,0,0,0.2);
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .menu a{
+            text-decoration:none;
+            color:white;
+            margin-left:25px;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        .menu a:hover{
+            color:#ffd6d6;
+        }
+
+        .hero{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            min-height:85vh;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content{
+            max-width:800px;
+        }
+
+        .hero-content img{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+
+        .hero-content h1{
+            font-size:55px;
+            margin-bottom:10px;
+        }
+
+        .hero-content h3{
+            font-size:25px;
+            margin-bottom:20px;
+            font-weight:normal;
+        }
+
+        .hero-content p{
+            font-size:18px;
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 30px;
+            background:white;
+            color:#B22222;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#ffd6d6;
+            transform:translateY(-3px);
+        }
+
+        footer{
+            text-align:center;
+            padding:15px;
+            color:white;
+            background:rgba(0,0,0,0.2);
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+            }
+
+            .menu{
+                margin-top:15px;
+            }
+
+            .menu a{
+                margin:0 10px;
+            }
+
+            .hero-content h1{
+                font-size:40px;
+            }
+
+            .hero-content h3{
+                font-size:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Navigasi -->
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="ABOUT_ME_HALDAN.html">About Me</a>
+            <a href="CV_HALDAN.html">CV</a>
+            <a href="CONTACT_HALDAN.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Halaman Utama -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <img src="foto haldan.jpeg" alt="Foto Profil">
+
+            <h1>ANDI HALDAN NUR</h1>
+
+            <h3>POLITEKNIK PEMBANGUNAN PERTANIAN GOWA</h3>
+
+            <p>
+                Selamat datang di website portofolio saya.
+                Saya merupakan mahasiswa Penyuluhan Pertanian yang memiliki
+                minat dalam pengembangan pertanian modern melalui penyuluhan,
+                mekanisasi pertanian, dan pemanfaatan teknologi pertanian.
+                Melalui pengalaman PKL II di Kabupaten Bone, Sulawesi Selatan,
+                saya memperoleh pengalaman berharga dalam pengoperasian drone
+                pertanian, rotavator, serta traktor John Deere untuk mendukung
+                Program Cetak Sawah Rakyat.
+            </p>
+
+            <a href="CV_HALDAN.html" class="btn">
+                CV 
+            </a>
+             <a href="ABOUT_ME_HALDAN.html" class="btn">
+                About Me
+             </a>
+            <a href="CONTACT_HALDAN.html" class="btn">
+                Contact
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 | Website Portofolio Andi Haldan Nur
+    </footer>
+
+</body>
+</html>
