@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Farid Rahman</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #8B0000, #DC143C);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        .container{
+            max-width:1000px;
+            width:100%;
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 10px 25px rgba(0,0,0,0.3);
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+        .left{
+            flex:1;
+            min-width:300px;
+            background:#B22222;
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
+
+        .left img{
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+
+        .left h2{
+            margin-bottom:10px;
+        }
+
+        .left p{
+            line-height:1.8;
+        }
+
+        .right{
+            flex:2;
+            min-width:300px;
+            padding:40px;
+        }
+
+        .right h1{
+            color:#B22222;
+            margin-bottom:20px;
+            border-bottom:3px solid #B22222;
+            padding-bottom:10px;
+        }
+
+        .right p{
+            text-align:justify;
+            line-height:1.8;
+            color:#444;
+            margin-bottom:15px;
+        }
+
+        .skills{
+            margin-top:25px;
+        }
+
+        .skills h3{
+            color:#B22222;
+            margin-bottom:15px;
+        }
+
+        .skill{
+            margin-bottom:15px;
+        }
+
+        .skill span{
+            font-weight:bold;
+            color:#444;
+        }
+
+        .bar{
+            width:100%;
+            height:12px;
+            background:#ddd;
+            border-radius:20px;
+            overflow:hidden;
+            margin-top:5px;
+        }
+
+        .progress{
+            height:100%;
+            background:#DC143C;
+        }
+
+        .footer{
+            text-align:center;
+            padding:15px;
+            background:#8B0000;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="left">
+            <img src="foto haldan.jpeg" alt="Foto Profil">
+
+            <h2>ANDI HALDAN NUR</h2>
+            <p>Mahasiswa Polbangtan Gowa</p>
+        </div>
+
+        <div class="right">
+
+            <h1>Tentang Saya</h1>
+
+            <p>
+                Saya merupakan mahasiswa Tingkat 3 Program Studi Penyuluhan 
+                Pertanian Berkelanjutan yang memiliki minat besar dalam pengembangan
+                 pertanian modern dan pemberdayaan petani melalui kegiatan 
+                 penyuluhan. Saya memiliki kemampuan komunikasi, kerja sama tim, 
+                 serta semangat belajar yang tinggi dalam menghadapi tantangan di 
+                 sektor pertanian.
+            </p>
+
+            <p>
+                Selama mengikuti Praktik Kerja Lapangan (PKL) II di Kabupaten Bone,
+                 Sulawesi Selatan, saya memperoleh banyak pengalaman dan 
+                 pengetahuan baru, terutama dalam bidang alat dan mesin
+                  pertanian (Alsintan). Kegiatan tersebut memberikan
+                   kesempatan kepada saya untuk terlibat langsung dalam 
+                   pelatihan dan pendampingan petani terkait penggunaan
+                    teknologi pertanian modern.
+            </p>
+
+            <p>
+                Fokus utama kegiatan yang saya ikuti meliputi 
+                pengoperasian drone pertanian, rotavator, dan traktor 
+                John Deere yang digunakan dalam mendukung Program Cetak 
+                Sawah Rakyat. Pengalaman tersebut semakin memperluas 
+                wawasan saya mengenai pentingnya mekanisasi pertanian 
+                dalam meningkatkan produktivitas dan efisiensi usaha 
+                tani.
+            </p>
+
+            <div class="skills">
+
+                <h3>Keahlian</h3>
+
+                <div class="skill">
+                    <span>Penyuluhan Pertanian</span>
+                    <div class="bar">
+                        <div class="progress" style="width:90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Pengoperasian Drone Pertanian</span>
+                    <div class="bar">
+                        <div class="progress" style="width:85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Pengoperasian Rotavator</span>
+                    <div class="bar">
+                        <div class="progress" style="width:80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Microsoft Office</span>
+                    <div class="bar">
+                        <div class="progress" style="width:90%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
