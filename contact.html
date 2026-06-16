@@ -1,173 +1,176 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Person</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Person</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
-}
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
 
-body{
-    min-height:100vh;
-    background:linear-gradient(135deg,#8B0000,#DC143C);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px;
-}
+        body{
+            min-height:100vh;
+            background:linear-gradient(135deg,#FFD700,#FFF176);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
 
-.container{
-    width:100%;
-    max-width:1000px;
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
+        .container{
+            width:100%;
+            max-width:1000px;
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        }
 
-.header{
-    background:linear-gradient(135deg,#B22222,#DC143C);
-    color:white;
-    text-align:center;
-    padding:40px;
-}
+        .header{
+            background:linear-gradient(135deg,#FFC107,#FFD700);
+            text-align:center;
+            padding:40px;
+            color:#333;
+        }
 
-.header img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border:5px solid white;
-    object-fit:cover;
-    margin-bottom:15px;
-}
+        .header img{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:15px;
+        }
 
-.header h1{
-    font-size:36px;
-    margin-bottom:10px;
-}
+        .header h1{
+            font-size:38px;
+            margin-bottom:10px;
+        }
 
-.header p{
-    font-size:18px;
-}
+        .header p{
+            font-size:18px;
+        }
 
-.content{
-    padding:40px;
-}
+        .content{
+            padding:40px;
+        }
 
-.contact-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    margin-bottom:40px;
-}
+        .contact-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+            margin-bottom:35px;
+        }
 
-.card{
-    background:#fff0f0;
-    border-radius:15px;
-    padding:25px;
-    text-align:center;
-    transition:0.3s;
-}
+        .card{
+            background:#FFF9C4;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            transition:0.3s;
+        }
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 5px 15px rgba(220,20,60,0.3);
-}
+        .card:hover{
+            transform:translateY(-5px);
+            box-shadow:0 5px 15px rgba(255,193,7,0.4);
+        }
 
-.card h3{
-    color:#B22222;
-    margin-bottom:10px;
-}
+        .icon{
+            font-size:40px;
+            margin-bottom:10px;
+        }
 
-.card p{
-    color:#555;
-}
+        .card h3{
+            color:#E6A700;
+            margin-bottom:10px;
+        }
 
-.icon{
-    font-size:40px;
-    margin-bottom:10px;
-}
+        .card p{
+            color:#555;
+        }
 
-.form-title{
-    text-align:center;
-    color:#B22222;
-    margin-bottom:20px;
-}
+        .form-title{
+            text-align:center;
+            color:#E6A700;
+            margin-bottom:20px;
+        }
 
-.form-group{
-    margin-bottom:15px;
-}
+        .form-group{
+            margin-bottom:15px;
+        }
 
-label{
-    display:block;
-    margin-bottom:5px;
-    color:#B22222;
-    font-weight:bold;
-}
+        label{
+            display:block;
+            margin-bottom:5px;
+            color:#E6A700;
+            font-weight:bold;
+        }
 
-input, textarea{
-    width:100%;
-    padding:12px;
-    border:2px solid #ddd;
-    border-radius:10px;
-    outline:none;
-}
+        input,
+        textarea{
+            width:100%;
+            padding:12px;
+            border:2px solid #ddd;
+            border-radius:10px;
+            outline:none;
+        }
 
-input:focus,
-textarea:focus{
-    border-color:#DC143C;
-}
+        input:focus,
+        textarea:focus{
+            border-color:#FFC107;
+        }
 
-textarea{
-    height:120px;
-    resize:none;
-}
+        textarea{
+            height:120px;
+            resize:none;
+        }
 
-button{
-    width:100%;
-    padding:14px;
-    background:#B22222;
-    color:white;
-    border:none;
-    border-radius:10px;
-    font-size:16px;
-    cursor:pointer;
-    transition:0.3s;
-}
+        button{
+            width:100%;
+            padding:14px;
+            background:#FFC107;
+            color:#333;
+            border:none;
+            border-radius:10px;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
 
-button:hover{
-    background:#8B0000;
-}
+        button:hover{
+            background:#FFD700;
+        }
 
-.footer{
-    background:#B22222;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
+        .footer{
+            background:#FFC107;
+            color:#333;
+            text-align:center;
+            padding:15px;
+            font-weight:bold;
+        }
 
-@media(max-width:768px){
+        @media(max-width:768px){
 
-    .header h1{
-        font-size:28px;
-    }
+            .header img{
+                width:120px;
+                height:120px;
+            }
 
-    .content{
-        padding:25px;
-    }
+            .header h1{
+                font-size:30px;
+            }
 
-    .header img{
-        width:120px;
-        height:120px;
-    }
-}
-</style>
+            .content{
+                padding:25px;
+            }
+        }
+    </style>
 
 </head>
 <body>
@@ -175,10 +178,13 @@ button:hover{
 <div class="container">
 
     <div class="header">
-        <img src="foto haldan.jpeg" alt="Foto Profil">
 
-        <h1>Contact Person</h1>
+        <img src="foto.jpeg" alt="Foto Profil">
+
+        <h1>CONTACT PERSON</h1>
+
         <p>Silakan hubungi saya melalui kontak berikut</p>
+
     </div>
 
     <div class="content">
@@ -188,25 +194,25 @@ button:hover{
             <div class="card">
                 <div class="icon">👤</div>
                 <h3>Nama</h3>
-                <p>Andi Haldan Nur</p>
+                <p>Fadiah Nur Fadillah</p>
             </div>
 
             <div class="card">
                 <div class="icon">📱</div>
                 <h3>WhatsApp</h3>
-                <p>082 194 319 930</p>
+                <p>0858 2505 7109</p>
             </div>
 
             <div class="card">
                 <div class="icon">📧</div>
                 <h3>Email</h3>
-                <p>Haldannur@email.com</p>
+                <p>fadiah@email.com</p>
             </div>
 
             <div class="card">
                 <div class="icon">📍</div>
                 <h3>Alamat</h3>
-                <p>Bone, Sulawesi Selatan, Indonesia</p>
+                <p>Makassar, Sulawesi Selatan, Indonesia</p>
             </div>
 
         </div>
@@ -226,6 +232,11 @@ button:hover{
             </div>
 
             <div class="form-group">
+                <label>Subjek</label>
+                <input type="text" placeholder="Masukkan subjek pesan">
+            </div>
+
+            <div class="form-group">
                 <label>Pesan</label>
                 <textarea placeholder="Tulis pesan Anda di sini..."></textarea>
             </div>
@@ -237,7 +248,7 @@ button:hover{
     </div>
 
     <div class="footer">
-        © 2026 | Contact Person Andi Haldan Nur
+        © 2026 | Contact Person Fadiah Nur Fadillah
     </div>
 
 </div>

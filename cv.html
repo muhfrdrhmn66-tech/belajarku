@@ -14,25 +14,24 @@
 }
 
 body{
-    background:linear-gradient(135deg,#8B0000,#DC143C);
+    background:linear-gradient(135deg,#FFD700,#FFF176);
     padding:30px;
 }
 
 .cv-container{
     max-width:1000px;
     margin:auto;
-    background:white;
+    background:#ffffff;
     border-radius:20px;
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Header */
 .header{
-    background:linear-gradient(135deg,#B22222,#DC143C);
-    color:white;
+    background:linear-gradient(135deg,#FFC107,#FFD700);
     text-align:center;
     padding:40px;
+    color:#333;
 }
 
 .header img{
@@ -45,15 +44,14 @@ body{
 }
 
 .header h1{
+    font-size:38px;
     margin-bottom:10px;
-    font-size:36px;
 }
 
 .header p{
     font-size:18px;
 }
 
-/* Content */
 .content{
     padding:40px;
 }
@@ -63,8 +61,8 @@ body{
 }
 
 .section h2{
-    color:#B22222;
-    border-left:5px solid #B22222;
+    color:#E6A700;
+    border-left:6px solid #FFC107;
     padding-left:12px;
     margin-bottom:15px;
 }
@@ -82,10 +80,24 @@ table td{
 table td:first-child{
     width:220px;
     font-weight:bold;
-    color:#B22222;
+    color:#E6A700;
 }
 
-/* Skill Bar */
+.section p{
+    line-height:1.8;
+    text-align:justify;
+    color:#444;
+}
+
+ul{
+    padding-left:20px;
+}
+
+ul li{
+    margin-bottom:8px;
+    line-height:1.8;
+}
+
 .skill{
     margin-bottom:15px;
 }
@@ -98,31 +110,22 @@ table td:first-child{
 .bar{
     width:100%;
     height:12px;
-    background:#f1d0d0;
+    background:#FFF9C4;
     border-radius:20px;
     overflow:hidden;
 }
 
 .progress{
     height:100%;
-    background:#DC143C;
+    background:#FFC107;
 }
 
-ul{
-    padding-left:20px;
-}
-
-ul li{
-    margin-bottom:8px;
-    line-height:1.8;
-}
-
-/* Footer */
 .footer{
-    background:#B22222;
-    color:white;
+    background:#FFC107;
+    color:#333;
     text-align:center;
     padding:15px;
+    font-weight:bold;
 }
 
 @media(max-width:768px){
@@ -148,13 +151,13 @@ ul li{
 
     <!-- Header -->
     <div class="header">
-        <img src="foto haldan.jpeg" alt="Foto Profil">
+        <img src="foto.jpeg" alt="Foto Profil">
 
-        <h1>Andi Haldan Nur</h1>
-        <p>Mahasiswa Tingkat 3 POLBANGTAN GOWA</p>
+        <h1>Fadia Nur Fadillah</h1>
+        <p>TINGKAT 3 / PPB</p>
     </div>
 
-    <!-- Isi CV -->
+    <!-- Content -->
     <div class="content">
 
         <div class="section">
@@ -163,15 +166,15 @@ ul li{
             <table>
                 <tr>
                     <td>Nama Lengkap</td>
-                    <td>Andi Haldan Nur</td>
+                    <td>Fadia Nur Fadillah</td>
                 </tr>
                 <tr>
                     <td>Tempat, Tanggal Lahir</td>
-                    <td>Bone, 12 Juni 2005</td>
+                    <td>Makassar, 22 Mei 2003</td>
                 </tr>
                 <tr>
                     <td>Jenis Kelamin</td>
-                    <td>Laki-laki</td>
+                    <td>Perempuan</td>
                 </tr>
                 <tr>
                     <td>Agama</td>
@@ -179,15 +182,15 @@ ul li{
                 </tr>
                 <tr>
                     <td>Alamat</td>
-                    <td>Bone, Sulawesi Selatan, Indonesia</td>
+                    <td>Makassar, Sulawesi Selatan, Indonesia</td>
                 </tr>
                 <tr>
-                    <td>No. Telepon</td>
-                    <td>082 194 319 930</td>
+                    <td>No. HP</td>
+                    <td>0858 2505 7109</td>
                 </tr>
                 <tr>
                     <td>Email</td>
-                    <td>haldannur@email.com</td>
+                    <td>fadiyah@email.com</td>
                 </tr>
             </table>
         </div>
@@ -195,13 +198,13 @@ ul li{
         <div class="section">
             <h2>Tentang Saya</h2>
 
-            <p style="line-height:1.8;">
+            <p>
                 Saya merupakan mahasiswa Program Studi Penyuluhan Pertanian yang
-                memiliki minat dalam bidang penyuluhan, pemberdayaan petani,
-                serta pengembangan teknologi pertanian modern. Saya memiliki
-                kemampuan komunikasi yang baik, mampu bekerja secara individu
-                maupun tim, serta selalu berusaha meningkatkan kompetensi diri
-                melalui kegiatan akademik, organisasi, dan praktik lapangan.
+                memiliki minat dalam bidang penyuluhan, mekanisasi pertanian,
+                dan pengembangan teknologi pertanian modern. Saya memiliki
+                kemampuan komunikasi yang baik, mampu bekerja dalam tim,
+                serta memiliki semangat belajar yang tinggi untuk terus
+                mengembangkan kompetensi diri.
             </p>
         </div>
 
@@ -209,9 +212,9 @@ ul li{
             <h2>Pendidikan</h2>
 
             <ul>
-                <li>SD Negeri 277 Palattae</li>
-                <li>SMP Negeri 1 Kahu</li>
-                <li>SMA Negeri 6 Bone</li>
+                <li>SD Inpres Antang II</li>
+                <li>SPENSA 1 Makassar</li>
+                <li>SMA Negeri 12 Makassar</li>
                 <li>Politeknik Pembangunan Pertanian (Polbangtan) Gowa</li>
             </ul>
         </div>
@@ -222,39 +225,33 @@ ul li{
             <div class="skill">
                 <div class="skill-name">Microsoft Office</div>
                 <div class="bar">
-                    <div class="progress" style="width:90%"></div>
+                    <div class="progress" style="width:99%"></div>
                 </div>
             </div>
 
             <div class="skill">
                 <div class="skill-name">Penyuluhan Pertanian</div>
                 <div class="bar">
+                    <div class="progress" style="width:90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">pemanfaatan sistem irigasi tadah hujan</div>
+                <div class="bar">
                     <div class="progress" style="width:85%"></div>
                 </div>
             </div>
 
-            <div class="skill">
-                <div class="skill-name">Pengoperasian Drone Pertanian</div>
-                <div class="bar">
-                    <div class="progress" style="width:80%"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="skill-name">Pengoperasian Rotavator</div>
-                <div class="bar">
-                    <div class="progress" style="width:75%"></div>
-                </div>
-            </div>
+         
         </div>
 
         <div class="section">
             <h2>Pengalaman Organisasi</h2>
 
             <ul>
-                <li>Anggota HMJ Pertanian</li>
-                <li>Anggota UKM Olahraga Korsa</li>
-                
+                <li>-</li>
+              
             </ul>
         </div>
 
@@ -262,7 +259,7 @@ ul li{
             <h2>Hobi</h2>
 
             <ul>
-            
+                <li>Membaca</li>
                 <li>Olahraga</li>
                 <li>Fotografi</li>
                 <li>Belajar Teknologi Pertanian</li>
@@ -271,9 +268,8 @@ ul li{
 
     </div>
 
-    <!-- Footer -->
     <div class="footer">
-        © 2026 | Curriculum Vitae Andi Haldan Nur
+        © 2026 | Curriculum Vitae Fadia Nur Fadillah
     </div>
 
 </div>
