@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Haldan Nur</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        .container{
+            width:90%;
+            max-width:1000px;
+            margin:30px auto;
+            display:flex;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+            border-radius:15px;
+            overflow:hidden;
+        }
+
+        .sidebar{
+            width:35%;
+            background:#b30000;
+            color:white;
+            padding:30px;
+            text-align:center;
+        }
+
+        .sidebar img{
+            width:170px;
+            height:170px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+
+        .sidebar h2{
+            margin-bottom:10px;
+        }
+
+        .sidebar h3{
+            margin-top:25px;
+            margin-bottom:10px;
+            border-bottom:2px solid white;
+            padding-bottom:5px;
+        }
+
+        .sidebar p, .sidebar li{
+            font-size:14px;
+            line-height:1.8;
+            list-style:none;
+        }
+
+        .content{
+            width:65%;
+            background:white;
+            padding:40px;
+        }
+
+        .content h1{
+            color:#b30000;
+            margin-bottom:5px;
+        }
+
+        .content .profesi{
+            color:#555;
+            margin-bottom:25px;
+        }
+
+        .section{
+            margin-bottom:25px;
+        }
+
+        .section h2{
+            color:#b30000;
+            border-left:6px solid #b30000;
+            padding-left:10px;
+            margin-bottom:10px;
+        }
+
+        .section p, .section li{
+            line-height:1.8;
+            color:#333;
+        }
+
+        .section ul{
+            padding-left:20px;
+        }
+
+        .footer{
+            text-align:center;
+            padding:15px;
+            background:#b30000;
+            color:white;
+        }
+
+        @media(max-width:768px){
+            .container{
+                flex-direction:column;
+            }
+
+            .sidebar,
+            .content{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <img src="foto haldan.jpeg" alt="Foto Profil">
+
+            <h2>ANDI HALDAN NUR</h2>
+            <p>05.01.23.2984</p>
+            <p>Mahasiswa Politeknik Pembangunan Pertanian Gowa </p>
+
+            <h3>Kontak</h3>
+            <p>📞 0812-3456-7890</p>
+            <p>✉ haldanur@email.com</p>
+            <p>📍 Bone, Sulawesi Selatan</p>
+
+            <h3>Keahlian</h3>
+            <ul>
+                <li>Penyuluhan Pertanian</li>
+                <li>Microsoft Office</li>
+                <li>Pengoperasian Drone Pertanian</li>
+                <li>Pengoperasian Rotavator</li>
+                <li>Komunikasi Publik</li>
+            </ul>
+
+            <h3>Bahasa</h3>
+            <ul>
+                <li>Indonesia</li>
+                <li>Inggris Dasar</li>
+            </ul>
+
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <h1>CURRICULUM VITAE</h1>
+            <p class="profesi">Mahasiswa Politeknik Pembangunan Pertanian Gowa</p>
+
+            <div class="section">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Saya adalah mahasiswa Penyuluhan Pertanian yang memiliki minat
+                    dalam pengembangan sektor pertanian modern. Memiliki pengalaman
+                    Praktik Kerja Lapangan (PKL) di Kabupaten Bone, Sulawesi Selatan,
+                    khususnya dalam kegiatan penyuluhan dan pengoperasian alat mesin
+                    pertanian seperti rotavator, drone pertanian, dan traktor modern.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Pendidikan</h2>
+                <ul>
+                    <li>
+                        <b>Politeknik Pembangunan Pertanian</b><br>
+                        Program Studi Penyuluhan Pertanian Berkelanjutan
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Pengalaman Organisasi</h2>
+                <ul>
+                    <li>Anggota Himpunan Mahasiswa Jurusan Pertanian</li>
+                    <li>Anggota UKM OLahraga Korsa</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Pengalaman PKL</h2>
+                <p>
+                    Melaksanakan Praktik Kerja Lapangan II di Desa Sungai Carigading,
+                    Kecamatan Awangpone, Kabupaten Bone, Sulawesi Selatan.
+                    Terlibat dalam kegiatan penyuluhan, pendampingan Brigade Pangan,
+                    pelatihan pengoperasian rotavator, serta pengenalan teknologi
+                    pertanian modern dalam mendukung Program Cetak Sawah Rakyat.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Hardskill</h2>
+                <ul>
+                    <li>Penyusunan Programa Penyuluhan</li>
+                    <li>Pembuatan Media Penyuluhan</li>
+                    <li>Pengoperasian Rotavator</li>
+                    <li>Pengoperasian Drone Pertanian</li>
+                    <li>Microsoft Word, Excel, dan PowerPoint</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 | Curriculum Vitae Andi Haldan Nur
+    </div>
+
+</body>
+</html>

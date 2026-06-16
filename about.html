@@ -3,117 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - Farid Rahman</title>
 
     <style>
         *{
             margin:0;
             padding:0;
             box-sizing:border-box;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: Arial, sans-serif;
         }
 
         body{
-            background:#f5f7fa;
-        }
-
-        .about{
-            max-width:1000px;
-            margin:50px auto;
-            padding:40px;
-            background:#fff;
-            border-radius:15px;
-            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, #8B0000, #DC143C);
+            min-height:100vh;
             display:flex;
+            justify-content:center;
             align-items:center;
-            gap:40px;
+            padding:20px;
         }
 
-        .about-image img{
-            width:250px;
-            height:250px;
+        .container{
+            max-width:1000px;
+            width:100%;
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 10px 25px rgba(0,0,0,0.3);
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+        .left{
+            flex:1;
+            min-width:300px;
+            background:#B22222;
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
+
+        .left img{
+            width:200px;
+            height:200px;
             border-radius:50%;
+            border:5px solid white;
             object-fit:cover;
-            border:5px solid #3498db;
-        }
-
-        .about-content h1{
-            color:#2c3e50;
-            margin-bottom:15px;
-        }
-
-        .about-content h3{
-            color:#3498db;
             margin-bottom:20px;
         }
 
-        .about-content p{
-            color:#555;
+        .left h2{
+            margin-bottom:10px;
+        }
+
+        .left p{
             line-height:1.8;
+        }
+
+        .right{
+            flex:2;
+            min-width:300px;
+            padding:40px;
+        }
+
+        .right h1{
+            color:#B22222;
+            margin-bottom:20px;
+            border-bottom:3px solid #B22222;
+            padding-bottom:10px;
+        }
+
+        .right p{
             text-align:justify;
+            line-height:1.8;
+            color:#444;
+            margin-bottom:15px;
         }
 
-        .btn{
-            display:inline-block;
-            margin-top:20px;
-            padding:12px 25px;
-            background:#3498db;
+        .skills{
+            margin-top:25px;
+        }
+
+        .skills h3{
+            color:#B22222;
+            margin-bottom:15px;
+        }
+
+        .skill{
+            margin-bottom:15px;
+        }
+
+        .skill span{
+            font-weight:bold;
+            color:#444;
+        }
+
+        .bar{
+            width:100%;
+            height:12px;
+            background:#ddd;
+            border-radius:20px;
+            overflow:hidden;
+            margin-top:5px;
+        }
+
+        .progress{
+            height:100%;
+            background:#DC143C;
+        }
+
+        .footer{
+            text-align:center;
+            padding:15px;
+            background:#8B0000;
             color:white;
-            text-decoration:none;
-            border-radius:8px;
-            transition:0.3s;
-        }
-
-        .btn:hover{
-            background:#2980b9;
-        }
-
-        @media(max-width:768px){
-            .about{
-                flex-direction:column;
-                text-align:center;
-            }
         }
     </style>
 </head>
 <body>
 
-<section class="about">
-    <div class="about-image">
-        <img src="foto_formal.jpeg" alt="Foto Profil">
+    <div class="container">
+
+        <div class="left">
+            <img src="foto haldan.jpeg" alt="Foto Profil">
+
+            <h2>ANDI HALDAN NUR</h2>
+            <p>Mahasiswa Polbangtan Gowa</p>
+        </div>
+
+        <div class="right">
+
+            <h1>Tentang Saya</h1>
+
+            <p>
+                Saya merupakan mahasiswa Tingkat 3 Program Studi Penyuluhan 
+                Pertanian Berkelanjutan yang memiliki minat besar dalam pengembangan
+                 pertanian modern dan pemberdayaan petani melalui kegiatan 
+                 penyuluhan. Saya memiliki kemampuan komunikasi, kerja sama tim, 
+                 serta semangat belajar yang tinggi dalam menghadapi tantangan di 
+                 sektor pertanian.
+            </p>
+
+            <p>
+                Selama mengikuti Praktik Kerja Lapangan (PKL) II di Kabupaten Bone,
+                 Sulawesi Selatan, saya memperoleh banyak pengalaman dan 
+                 pengetahuan baru, terutama dalam bidang alat dan mesin
+                  pertanian (Alsintan). Kegiatan tersebut memberikan
+                   kesempatan kepada saya untuk terlibat langsung dalam 
+                   pelatihan dan pendampingan petani terkait penggunaan
+                    teknologi pertanian modern.
+            </p>
+
+            <p>
+                Fokus utama kegiatan yang saya ikuti meliputi 
+                pengoperasian drone pertanian, rotavator, dan traktor 
+                John Deere yang digunakan dalam mendukung Program Cetak 
+                Sawah Rakyat. Pengalaman tersebut semakin memperluas 
+                wawasan saya mengenai pentingnya mekanisasi pertanian 
+                dalam meningkatkan produktivitas dan efisiensi usaha 
+                tani.
+            </p>
+
+            <div class="skills">
+
+                <h3>Keahlian</h3>
+
+                <div class="skill">
+                    <span>Penyuluhan Pertanian</span>
+                    <div class="bar">
+                        <div class="progress" style="width:90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Pengoperasian Drone Pertanian</span>
+                    <div class="bar">
+                        <div class="progress" style="width:85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Pengoperasian Rotavator</span>
+                    <div class="bar">
+                        <div class="progress" style="width:80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Microsoft Office</span>
+                    <div class="bar">
+                        <div class="progress" style="width:90%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="about-content">
-        <h1>Tentang Saya</h1>
-        <h3>Pengalaman PKL 2 di Kalimantan Selatan</h3>
-
-        <p>
-           Saya merupakan mahasiswa yang memiliki minat besar dalam bidang
-            pertanian modern, khususnya mekanisasi pertanian dan penyuluhan
-            pertanian. Selama mengikuti Praktik Kerja Lapangan (PKL) II di
-            Kabupaten Tapin, Kalimantan Selatan, saya memperoleh banyak pengalaman
-            dan pengetahuan baru yang memperluas wawasan serta meningkatkan
-            keterampilan saya di lapangan.
-        </p>
-        <p>
-            Dalam kegiatan tersebut, saya terlibat langsung dalam berbagai aktivitas
-            yang berkaitan dengan penggunaan alat dan mesin pertanian (alsintan), 
-            seperti drone pertanian, rotavator, dan traktor John Deere. Pengalaman 
-            ini memberikan pemahaman yang lebih mendalam mengenai pengoperasian, 
-            perawatan, serta pemanfaatan teknologi pertanian modern untuk meningkatkan 
-            efisiensi dan produktivitas usaha tani.
-        </p>
-        <p>
-            Melalui PKL II, saya tidak hanya mengembangkan kemampuan teknis dalam bidang
-             mekanisasi pertanian, tetapi juga meningkatkan keterampilan komunikasi, kerja
-            sama tim, pemecahan masalah, dan adaptasi terhadap kondisi kerja di lapangan.
-             Pengalaman tersebut semakin memotivasi saya untuk terus belajar dan berkontribusi 
-            dalam pengembangan sektor pertanian yang maju, modern, dan berkelanjutan.
-        </p>
-
-        <a href="contact.html" class="btn">Hubungi Saya</a>
-    </div>
-</section>
 
 </body>
 </html>
